@@ -55,3 +55,56 @@ A full-stack AI-powered platform that helps students generate personalized caree
 ---
 
 ## 📁 Project Structure
+
+server/
+├── models/
+├── controllers/
+├── routes/
+├── utils/
+├── config/
+└── index.js
+
+client/
+├── src/
+├── components/
+├── pages/
+└── main.jsx
+
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/yourusername/ai-roadmap-project.git
+cd ai-roadmap-project
+cd server
+npm install
+npm run dev
+
+.env:
+
+PORT=5000
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_secret
+GEMINI_API_KEY=your_api_key
+
+
+cd client
+npm install
+npm run dev
+
+🔐 API Features
+POST /api/auth/register
+POST /api/auth/login
+POST /api/auth/logout
+POST /api/ai/roadmap
+POST /api/ai/os-opportunities
+GET /api/admin/stats
+
+👨‍💻 Author
+
+Juned Khan
+Full-Stack Developer | MERN | AI Enthusiast
+
