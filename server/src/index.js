@@ -8,10 +8,7 @@ const app = express();
 connect_DB();
 
 app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "https://career-with-ai-at9w.vercel.app"
-  ],
+  origin: true,
   credentials: true,
 }));
 
