@@ -1,20 +1,22 @@
 import axios from "axios";
 
+const BASE_URL = import.meta.env.VITE_API_URL;
+
 // 🔹 AI Routes
 const aiAPI = axios.create({
-  baseURL: "http://localhost:7000/api/v1/ai",
+  baseURL: `${BASE_URL}/ai`,
   withCredentials: true,
 });
 
 // 🔹 Auth Routes
 const authAPI = axios.create({
-  baseURL: "http://localhost:7000/api/v1/auth",
+  baseURL: `${BASE_URL}/auth`,
   withCredentials: true,
 });
 
 // 🔹 Admin Routes
 const adminAPI = axios.create({
-  baseURL: "http://localhost:7000/api/v1/admin",
+  baseURL: `${BASE_URL}/admin`,
   withCredentials: true,
 });
 
